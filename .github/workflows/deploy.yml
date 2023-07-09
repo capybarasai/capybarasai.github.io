@@ -11,6 +11,12 @@ on:
         default: 'Okay'
         required: false
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
