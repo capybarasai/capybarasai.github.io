@@ -11,7 +11,7 @@ logo_height = "37px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "spydea"
+logo_text = "SKU 智能"
 # navbar fixed to top
 navbar_fixed = true
 # Main Sections
@@ -25,7 +25,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 custom_script = ""
 # copyright
 theme_copyright = true
-copyright = "Copyright by your company"
+copyright = "Copyright by SKU Metric"
 
 # Preloader
 [preloader]
@@ -46,17 +46,17 @@ link = "contact/"
 # contact info
 [contact_info]
 mobile = "+94746-388817"
-email = "hello@spydea.com"
+email = "hi@sku-metric.com"
 
 # Subscription
 [announcement]
 enable = true
-content = "Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus nibh Vivamus [Learn More](#)"
+content = "SKU 智能开业优惠，提供低价咨询 [点击这里](#)"
 
 # Subscription
 [quote_form]
 enable = true
-submit_button_label = "Get A Quote"
+submit_button_label = "咨询价格"
 placeholder = ""
 action = "#"                        # contact form works with [https://airform.io/] , [https://formspree.io]
 
@@ -83,9 +83,9 @@ enableQQ = false # https://valine.js.org/en/configuration.html#enableQQ
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = ["Boilerplate", "Hugo", "Themefisher", "GetHugoThemes"]
-description = "This is meta description"
-author = "Themefisher"
+keywords = ["卖家", "需求", "销量", "预测"]
+description = "SKU 智能"
+author = "SKU Metric"
 image = "images/favicon.png"                                       # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
@@ -121,8 +121,8 @@ mastodon = "" # Your verification code
 [cookies]
 enable = true
 expire_days = 60
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
+content = "本站使用 Cookie"
+button = "接受"
 
 ############################# social site ########################
 [[social]]

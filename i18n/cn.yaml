@@ -1,0 +1,71 @@
+- id: home
+  translation: 首页
+
+- id: read_more
+  translation: 更多
+
+- id: first_name
+  translation: 名
+
+- id: last_name
+  translation: 姓
+
+- id: full_name
+  translation: 姓名
+
+- id: email
+  translation: E-mail
+
+- id: email_input_placeholder
+  translation: E-mail 输入
+
+- id: password
+  translation: 密码
+
+- id: purpose
+  translation: purpose
+
+- id: message
+  translation: 消息
+
+- id: submit
+  translation: 提交
+
+- id: submit_text
+  translation: 提交文本
+
+- id: no_post
+  translation: 没有
+
+- id: related_post
+  translation: 相关
+
+- id: recent_post
+  translation: 最近
+
+- id: company
+  translation: 公司
+
+- id: resources
+  translation: Ressources
+
+- id: email_us
+  translation: Envoyez-nous email
+
+- id: contact_us
+  translation: 联系我们
+
+- id: contact_select_option_1
+  translation: Enquête générale
+
+- id: contact_select_option_2
+  translation: Demande de soutien
+
+- id: contact_select_option_3
+  translation: Opportunité de partenariat
+
+- id: apply_now
+  translation: 现在申请
+
+- id: back_to_home
+  translation: 回到首页

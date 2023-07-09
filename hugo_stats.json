@@ -3,7 +3,6 @@
     "tags": [
       "a",
       "article",
-      "base",
       "blockquote",
       "body",
       "br",
@@ -802,6 +801,7 @@
       "accordions",
       "blockquote",
       "button",
+      "cn",
       "code-and-syntax-highlighting",
       "comment-connecter-votre-magasin-avec",
       "company-liability",
