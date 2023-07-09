@@ -69,6 +69,13 @@ jobs:
         with:
           path: ./public
 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+
   # Deployment job
   deploy:
     environment:
