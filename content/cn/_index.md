@@ -40,59 +40,59 @@ feature_list:
   enable: true
   title: "新鲜数据与模型多元化"
   subtitle: "技术驱动"
-  description: "基于最新数据，构建多元模型。SKU 智能针对每个案例智能选取最佳模型，并且提供可信赖的测试。"
+  description: "基于最新数据，构建多元机器学习模型。SKU 智能针对每个案例智能选取最佳模型，并且提供可信赖的测试。"
   list:
     - title: "当前趋势"
       icon: "fa-regular fa-paper-plane"
-      description: "基于最新数据提供当前商品趋势，占据商品暸望塔，"
-    - title: "Commentaire précis"
-      icon: "fa-regular fa-copy"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Prise en charge des plugins"
+      description: "基于最新数据，瞭望当前商品趋势，定位爆款。"
+    - title: "需求预测"
       icon: "fa-regular fa-lightbulb"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Toutes intégrations"
-      icon: "fa-regular fa-object-ungroup"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "预测未来商品需求，合理规划库存。"
+    # - title: "Prise en charge des plugins"
+    #   icon: "fa-regular fa-lightbulb"
+    #   description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+    # - title: "Toutes intégrations"
+    #   icon: "fa-regular fa-object-ungroup"
+    #   description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
 
-process:
-  enable: true
-  title: "Ne nous croyez pas sur parole"
-  subtitle: "L'EXPÉRIENCE PARLE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt."
-  list:
-    - title: "Fonctionnalités dont vous"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "images/tab-contents/feature-tab-content-1.jpg"
-    - title: "Augmentez vos ventes"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "images/tab-contents/feature-tab-content-2.jpg"
-    - title: "Choisissez le bon forfait"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "images/tab-contents/feature-tab-content-3.jpg"
+# process:
+#   enable: true
+#   title: "Ne nous croyez pas sur parole"
+#   subtitle: "L'EXPÉRIENCE PARLE"
+#   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt."
+#   list:
+#     - title: "Fonctionnalités dont vous"
+#       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+#       image: "images/tab-contents/feature-tab-content-1.jpg"
+#     - title: "Augmentez vos ventes"
+#       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+#       image: "images/tab-contents/feature-tab-content-2.jpg"
+#     - title: "Choisissez le bon forfait"
+#       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+#       image: "images/tab-contents/feature-tab-content-3.jpg"
 
-fun_fact:
-  enable: true
-  title: "Quelques chiffres dont nous sommes fiers"
-  subtitle: "ATTEINDRE L'EXCELLENCE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
+# fun_fact:
+#   enable: true
+#   title: "Quelques chiffres dont nous sommes fiers"
+#   subtitle: "ATTEINDRE L'EXCELLENCE"
+#   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
 
-features:
-  - title: "Faites passer votre marketing au niveau supérieur."
-    subtitle: "STRATÉGIES INNOVANTES"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "images/features/1.png"
+# features:
+#   - title: "Faites passer votre marketing au niveau supérieur."
+#     subtitle: "STRATÉGIES INNOVANTES"
+#     description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
+#     image: "images/features/1.png"
 
-  - title: "Choisissez le bon plan pour votre équipe"
-    subtitle: "SOLUTIONS COLLABORATIVES"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "images/features/2.png"
+#   - title: "Choisissez le bon plan pour votre équipe"
+#     subtitle: "SOLUTIONS COLLABORATIVES"
+#     description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
+#     image: "images/features/2.png"
 
-blog:
-  enable: true
-  title: "Découvrez les derniers articles de notre blog"
-  subtitle: "Derniers articles"
-  button:
-    label: "Parcourir les articles"
-    link: "blog/"
+# blog:
+#   enable: true
+#   title: "Découvrez les derniers articles de notre blog"
+#   subtitle: "Derniers articles"
+#   button:
+#     label: "Parcourir les articles"
+#     link: "blog/"
 ---

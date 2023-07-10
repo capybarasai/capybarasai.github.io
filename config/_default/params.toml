@@ -45,7 +45,7 @@ link = "contact/"
 
 # contact info
 [contact_info]
-mobile = "+94746-388817"
+# mobile = "+94746-388817"
 email = "hi@sku-metric.com"
 
 # Subscription
