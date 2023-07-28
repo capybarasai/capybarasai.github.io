@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 draft: false
-layout: "contact"
+layout: "contact_netlify"
 
 contact_links:
   - title: "联系我们"
