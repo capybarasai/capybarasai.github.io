@@ -2,7 +2,7 @@
 title: "谷歌趋势"
 layout: "google_trend"
 draft: false
-description: "SKU 度量还在隐身模式，我们在将来会开放职位申请。"
+description: "免费趋势数据"
 show_page_description: true
 
 featured_image: "images/career_capybara_walking.jpg"
