@@ -69,3 +69,18 @@
 
 - id: back_to_home
   translation: 回到首页
+
+- id: about_you
+  translation: 关于你
+
+- id: trend_request
+  translation: 谷歌趋势请求
+
+- id: trend_country
+  translation: 谷歌趋势国家
+
+- id: trend_keyword
+  translation: 谷歌趋势关键词
+
+- id: trend_message
+  translation: 其他补充

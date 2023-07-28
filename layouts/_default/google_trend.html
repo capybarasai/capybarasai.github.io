@@ -9,31 +9,34 @@
             data-aos="fade-up-sm"
             class="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14">
             <form
-              action="{{ site.Params.contact_form_action }}"
+              name="google_trend_request"
               method="POST"
-              class="row gy-4 text-dark">
+              class="row gy-4 text-dark" data-netlify="true">
+
+              <h2 class="text-dark mb-3 text-xl font-bold sm:text-2xl">{{ i18n "about_you"}}</h2>
+
               <div class="sm:col-6">
-                <label for="fname" class="form-label"
-                  >{{ i18n "first_name" }}</label
+                <label for="fullname" class="form-label"
+                  >{{ i18n "full_name" }}</label
                 >
                 <input
                   type="text"
                   class="form-input"
-                  placeholder="Your First Name"
-                  id="fname"
-                  name="fname"
+                  placeholder="Your Full Name"
+                  id="fullname"
+                  name="fullname"
                   required />
               </div>
               <div class="sm:col-6">
-                <label for="lname" class="form-label"
-                  >{{ i18n "last_name" }}</label
+                <label for="company" class="form-label"
+                  >{{ i18n "company" }}</label
                 >
                 <input
                   type="text"
                   class="form-input"
                   placeholder="Your Last Name"
-                  id="lname"
-                  name="lname"
+                  id="company"
+                  name="company"
                   required />
               </div>
               <div class="col-12">
@@ -46,34 +49,40 @@
                   required
                   name="email" />
               </div>
-              <div class="col-12">
-                <label for="purpose" class="form-label"
-                  >{{ i18n "purpose" }}</label
-                >
-                <select
-                  id="purpose"
+
+              <hr>
+              <h2 class="text-dark mb-3 text-xl font-bold sm:text-2xl">{{ i18n "trend_request"}}</h2>
+
+              <div class="sm:col-6">
+                <label for="trend_country" class="form-label">{{ i18n "trend_country" }}</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="谷歌趋势国家 / Google Trend Country"
+                  id="trend_country"
                   required
-                  class="border-border w-full rounded-lg px-5 py-4 text-sm">
-                  <option value="0">
-                    {{ i18n "contact_select_option_1" }}
-                  </option>
-                  <option value="1">
-                    {{ i18n "contact_select_option_2" }}
-                  </option>
-                  <option value="2">
-                    {{ i18n "contact_select_option_3" }}
-                  </option>
-                </select>
+                  name="trend_country" />
               </div>
+              <div class="sm:col-6">
+                <label for="trend_keyword" class="form-label">{{ i18n "trend_keyword" }}</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="谷歌趋势关键词 / Google Trend Keyword"
+                  id="trend_keyword"
+                  required
+                  name="trend_keyword" />
+              </div>
+
               <div class="col-12">
-                <label for="message" class="form-label"
-                  >{{ i18n "message" }}</label
+                <label for="trend_message" class="form-label"
+                  >{{ i18n "trend_message" }}</label
                 >
                 <textarea
-                  name="message"
+                  name="trend_message"
                   class="form-textarea"
-                  placeholder="Your Message"
-                  id="message"
+                  placeholder="其他补充 / Your Message"
+                  id="trend_message"
                   cols="30"
                   required
                   rows="4"></textarea>

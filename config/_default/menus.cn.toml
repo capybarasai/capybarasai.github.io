@@ -7,14 +7,20 @@ url = ""
 weight = 1
 
 [[main]]
+name = "谷歌趋势"
+url = "google_trend"
+weight = 2
+
+
+[[main]]
 name = "关于"
 url = "about/"
-weight = 2
+weight = 3
 
 # [[main]]
 # name = "博客"
 # url = "blog/"
-# weight = 3
+# weight = 4
 
 [[main]]
 weight = 4
