@@ -58,17 +58,17 @@ url = "terms-conditions/"
 # url = "404/"
 
 [[footer_01]]
-name = "About us"
+name = "关于"
 url = "about/"
 weight = 1
 
 [[footer_01]]
-name = "Contact us"
+name = "联系我们"
 url = "contact/"
 weight = 2
 
 [[footer_01]]
-name = "Pricing"
+name = "价格"
 url = "pricing/"
 weight = 3
 
@@ -78,7 +78,7 @@ weight = 3
 # weight = 1
 
 [[footer_02]]
-name = "Career"
+name = "招工"
 url = "career/"
 weight = 2
 

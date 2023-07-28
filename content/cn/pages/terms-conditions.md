@@ -1,51 +1,51 @@
 ---
 title: Terms & Conditions
-date: 2023-01-12T11:07:10+06:00
+date: 2018-09-24T11:07:10+06:00
 description: ""
 ---
 
-### 1\. Définitions
+### 1\. Definitions
 
-Nous collectons certaines données personnelles d'identification lorsque vous vous inscrivez à notre service, telles que votre nom, votre adresse e-mail, votre adresse PayPal (si différente de l'adresse e-mail) et votre numéro de téléphone. Les données personnelles que nous collectons auprès de vous ne sont divulguées que conformément à nos Conditions d'utilisation et/ou à la présente Politique de confidentialité. Conclure le site Web. Chaque fois que vous visitez notre site, nous pouvons collecter des informations non identifiables auprès de vous, telles que l'URL de référence, le navigateur, le système d'exploitation, les informations sur les cookies et le fournisseur de services Internet. Sans assignation à comparaître, conformité volontaire de la part de votre fournisseur d'accès Internet ou enregistrements supplémentaires d'un tiers, ces informations seules ne peuvent généralement pas être utilisées pour vous identifier. Le terme "données personnelles" n'inclut pas les données anonymisées et agrégées faites sur la base des données personnelles, qui sont la propriété exclusive de Conclude.
+We collect certain identifying personal data when you Sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
 
-### 2\. Conditions générales
+### 2\. General Terms
 
-#### Service fourni tel quel :
+#### Service Provided AS IS:
 
-Le Service est fourni gratuitement pendant ce projet pilote et est fourni "tel quel" sans garantie. Cependant, Conclude fournira une assistance aux Utilisateurs pour le Service ; Conclure ne s'engage à aucun niveau de service ou de disponibilité du Service. Une description plus détaillée du Service et de notre assistance aux utilisateurs est disponible sur le Site.
+The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
 
-#### Interfonctionnement avec Slack :
+#### Interoperation with Slack:
 
-Le Service interagit avec Slack.com et dépend de la disponibilité et de l'accès continus à Slack. Si, pour une raison quelconque, Conclude ne peut pas accéder ou utiliser Slack (y compris, sans s'y limiter, une modification des conditions ou une augmentation des frais facturés par Slack), Conclude peut ne pas être en mesure de fournir toutes les fonctions de son Service. Aucun remboursement ou crédit, le cas échéant, ne sera fourni pour une indisponibilité temporaire de Slack (par exemple, des fenêtres de maintenance).
+The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
 
-#### Responsabilité de l'entreprise :
+#### Company Liability:
 
-Si vous concluez cet accord au nom d'une entreprise, vous acceptez par la présente que l'entreprise est responsable, en vertu du présent accord, de toutes les actions et omissions menées par ses utilisateurs désignés du service.
+If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
 
-### 3\. Admissibilité
+### 3\. Eligibility
 
-Afin d'utiliser notre service, vous devez remplir un certain nombre de conditions, y compris, mais sans s'y limiter :
+In order to use our Service, you must meet a number of conditions, including but not limited to:
 
-- Améliorer ou améliorer l'expérience utilisateur, notre site ou notre service.
-- Traiter les opérations.
-- Envoyer des e-mails à propos de notre site ou répondre aux demandes de renseignements.
-- Envoyer des e-mails et des mises à jour sur Conclure, y compris des nouvelles et des demandes d'accord sur des documents juridiques modifiés tels que la présente politique de confidentialité et nos conditions d'utilisation.
-- Effectuer toute autre fonction que nous estimons nécessaire pour protéger le bon fonctionnement de notre Site ou Service.
+- Enhance or improve User experience, our Site, or our Service.
+- Process transactions.
+- Send emails about our Site or respond to inquiries.
+- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
+- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
 
-### 4\. Règles d'utilisation
+### 4\. Rules of Use
 
-Les utilisateurs de Conclude (i) doivent garder les mots de passe sécurisés et confidentiels ; (ii) sont seuls responsables des données de l'utilisateur et de toutes les activités de leur compte lors de l'utilisation du service ; (iii) doivent déployer des efforts commercialement raisonnables pour empêcher tout accès non autorisé à leur compte, et informer Conclude rapidement de tout accès non autorisé ; et (iv) ne peuvent utiliser le Service que conformément au guide de l'utilisateur en ligne de Conclude et à toutes les lois et réglementations applicables.
+Users of Conclude (i) must keep passwords secure and confidential; (ii) are solely responsible for User Data and all activity in their account while using the Service; (iii) must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and (iv) may use the Service only in accordance with Conclude's online user guide and all applicable laws and regulations.
 
-#### Il ne faut pas:
+#### You must not:
 
-- Améliorer ou améliorer l'expérience utilisateur, notre site ou notre service.
-- Traiter les opérations.
-- Envoyer des e-mails à propos de notre site ou répondre aux demandes de renseignements.
-- Envoyer des e-mails et des mises à jour sur Conclure, y compris des nouvelles et des demandes d'accord sur des documents juridiques modifiés tels que la présente politique de confidentialité et nos conditions d'utilisation.
-- Effectuer toute autre fonction que nous estimons nécessaire pour protéger le bon fonctionnement de notre Site ou Service.
+- Enhance or improve User experience, our Site, or our Service.
+- Process transactions.
+- Send emails about our Site or respond to inquiries.
+- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
+- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
 
-### 5\. Droits de propriété intellectuelle
+### 5\. Intellectual Property Rights
 
-Vos informations peuvent être transférées et conservées sur des ordinateurs situés en dehors de votre état, province, pays ou autre juridiction gouvernementale où les lois sur la confidentialité peuvent ne pas être aussi protectrices que celles de votre juridiction. Si vous choisissez de nous fournir des informations, Conclude transfère les informations personnelles à Google Cloud Platform et les traite là-bas. Votre consentement à cette politique de confidentialité suivi de votre soumission de ces informations représente votre accord à ce transfert.
+Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
 
-_Dernière modification - 18 avril 2023_
+_Last Modified - 18 April, 2023_
