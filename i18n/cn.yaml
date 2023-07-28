@@ -32,7 +32,7 @@
   translation: 提交
 
 - id: submit_text
-  translation: 提交文本
+  translation: 提交
 
 - id: no_post
   translation: 没有
@@ -56,13 +56,13 @@
   translation: 联系我们
 
 - id: contact_select_option_1
-  translation: Enquête générale
+  translation: 一般问题
 
 - id: contact_select_option_2
-  translation: Demande de soutien
+  translation: 咨询请求
 
 - id: contact_select_option_3
-  translation: Opportunité de partenariat
+  translation: 合作
 
 - id: apply_now
   translation: 现在申请

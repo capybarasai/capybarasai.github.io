@@ -4,22 +4,10 @@ draft: false
 layout: "contact"
 
 contact_links:
-  - title: "Contactez le support"
+  - title: "联系我们"
     links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contacter Carrières"
-    links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contacter la presse"
-    links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
+      - label: "hi@sku-metric.com"
+        link: "mailto:hi@sku-metric.com"
+      - label: "微信：emptymalei"
+        # link: ""
 ---

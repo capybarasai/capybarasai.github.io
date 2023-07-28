@@ -11,7 +11,7 @@ logo_height = "37px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "SKU 智能"
+logo_text = "SKU 度量"
 # navbar fixed to top
 navbar_fixed = true
 # Main Sections
@@ -51,7 +51,7 @@ email = "hi@sku-metric.com"
 # Subscription
 [announcement]
 enable = true
-content = "SKU 智能开业优惠，提供低价咨询 [点击这里](#)"
+content = "SKU 度量优惠，[点击这里](/pricing)"
 
 # Subscription
 [quote_form]
@@ -84,7 +84,7 @@ enableQQ = false # https://valine.js.org/en/configuration.html#enableQQ
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 keywords = ["卖家", "需求", "销量", "预测"]
-description = "SKU 智能"
+description = "SKU 度量"
 author = "SKU Metric"
 image = "images/favicon.png"                                       # this image will be used as fallback if a page has no image of its own
 

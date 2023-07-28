@@ -1,111 +1,47 @@
 ---
-title: À propos de Spydea
+title: "关于"
 layout: "about"
-description: "Vivamus accu msan tincidunt. Vestib ulum ac diam sit amet quam vehicula elementum sed suscipit tortor eget felis porttitor volut"
+description: "测量与预测，SKU 度量帮助客户优化业务决策，提高销售和利润。"
 show_page_description: true
 
 gallery:
   enable: true
-  image_left: "images/about/1.jpg"
-  image_right: "images/about/2.jpg"
+  image_left: "images/about/alexander-andrews-4JdvOwrVzfY-unsplash.jpg"
+  image_right: "images/about/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
 
 ultimate_vision:
-  - title: "Un monde financier connecté avec des opportunités ouvertes"
-    subtitle: "NOUS AVONS NOTRE"
-  - title: "Connectez le monde grâce à une application intelligente"
-    subtitle: "NOUS SOMMES L'ULTIME"
+  - title: "数据是我们的业务核心，客户的数据安全也是我们的首要安全指标。"
+    subtitle: "保护客户的数据安全"
+  - title: "我们预测未来，也测量我们预测的未来。"
+    subtitle: "预测未来"
 
-fun_fact:
-  enable: true
-  title: "Quelques chiffres dont nous sommes fiers"
-  subtitle: "ATTEINDRE L'EXCELLENCE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
+# fun_fact:
+#   enable: true
+#   title: "A Few Numbers We are Proud"
+#   subtitle: "ACHIEVING EXCELLENCE"
+#   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
 
 team_member:
-  title: "Incroyable équipe derrière l'application Spydea"
-  subtitle: "LES MEMBRES DE NOTRE ÉQUIPE"
+  title: "我们的团队成员"
+  subtitle: "SKU 度量的推动"
   button:
-    label: "Devenir un membre"
+    label: "加入我们"
     link: "career/"
   members:
-    - name: "Bessie Cooper"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/1.jpg"
+    - name: "1 号员工"
+      description: "物理，电商，定价，机器学习"
+      image: "images/team-member/mariano-nocetti-kvJDhz8yHwA-unsplash.jpg"
       social:
         # - link: "https://facebook.com"
         #   icon: "fa-brands fa-facebook"
-        # - link: "https://twitter.com"
-        #   icon: "fa-brands fa-twitter"
-        - link: "https://www.linkedin.com/company/sku-metric"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Albert Flores"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/2.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
+        - link: "https://twitter.com/leima137"
           icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
+        - link: "https://linkedin.com/in/leima137"
           icon: "fa-brands fa-linkedin-in"
-    - name: "Jacob Jones"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/3.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Jerome Bell"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/4.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Guy Hawkins"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/5.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Darlene Robertson"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/6.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Devon Lane"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/7.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
-    - name: "Cody Fisher"
-      description: "adipiscing cons cte tur dolor sit amet, cons cte tur dolorili"
-      image: "images/team-member/8.jpg"
-      social:
-        - link: "https://facebook.com"
-          icon: "fa-brands fa-facebook"
-        - link: "https://twitter.com"
-          icon: "fa-brands fa-twitter"
-        - link: "https://linkedin.com"
-          icon: "fa-brands fa-linkedin-in"
+
+opened_positions:
+  enable: false
+  title: "SKU 度量职位"
+  subtitle: "加入我们"
+  description: "SKU 度量欧洲团队"
 ---
