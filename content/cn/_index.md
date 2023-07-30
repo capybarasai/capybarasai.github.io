@@ -1,6 +1,6 @@
 ---
 banner:
-  title: "SKU 度量"
+  title: "水豚 AI"
   description: "洞悉买卖趋势，预测商品未来"
   images:
     main: "/images/banner/banner-image.jpg"
@@ -40,7 +40,7 @@ feature_list:
   enable: true
   title: "新鲜数据与模型多元化"
   subtitle: "技术驱动"
-  description: "基于最新数据，构建多元机器学习模型。SKU 度量针对每个案例智能选取最佳模型，并且提供可信赖的测试。"
+  description: "基于最新数据，构建多元机器学习模型。水豚 AI 针对每个案例智能选取最佳模型，并且提供可信赖的测试。"
   list:
     - title: "当前趋势"
       icon: "fa-regular fa-paper-plane"

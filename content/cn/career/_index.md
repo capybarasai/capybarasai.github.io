@@ -1,12 +1,12 @@
 ---
-title: "加入 SKU 度量"
-description: "SKU 度量还在隐身模式，我们在将来会开放职位申请。"
+title: "加入水豚 AI"
+description: "水豚 AI还在隐身模式，我们在将来会开放职位申请。"
 show_page_description: true
 
 featured_image: "images/career_capybara_walking.jpg"
 
 # benefits:
-#   title: "SKU 度量"
+#   title: "水豚 AI"
 #   subtitle: "Bénéfices et avantages"
 #   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
 #   facilities:

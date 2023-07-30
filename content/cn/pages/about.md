@@ -1,7 +1,7 @@
 ---
 title: "关于"
 layout: "about"
-description: "测量与预测，SKU 度量帮助客户优化业务决策，提高销售和利润。"
+description: "测量与预测，水豚 AI 帮助客户优化业务决策，提高销售和利润。"
 show_page_description: true
 
 gallery:
@@ -23,7 +23,7 @@ ultimate_vision:
 
 team_member:
   title: "我们的团队成员"
-  subtitle: "SKU 度量的推动"
+  subtitle: "水豚 AI 的推动"
   button:
     label: "加入我们"
     link: "career/"
@@ -41,7 +41,7 @@ team_member:
 
 opened_positions:
   enable: false
-  title: "SKU 度量职位"
+  title: "水豚 AI 职位"
   subtitle: "加入我们"
-  description: "SKU 度量欧洲团队"
+  description: "水豚 AI 欧洲团队"
 ---

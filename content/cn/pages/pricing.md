@@ -5,7 +5,7 @@ layout: "pricing"
 pricing_plan:
   title: "免费使用"
   subtitle: "正在促销"
-  description: "SKU 度量正在免费提供数据和服务"
+  description: "水豚 AI 正在免费提供数据和服务"
   button:
     label: "立刻查看"
     link: "sign-up/"
