@@ -1,7 +1,25 @@
 {{ define "main" }}
   {{ partial "page-header.html" . }}
+
+  <section class="section relative z-20 mt-[-26rem] overflow-hidden">
+    <div class="container relative z-30">
+      <div class="row relative">
+        <div class="md:col-10 mx-auto">
+          <div
+            data-aos="fade-up-sm"
+            class="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14">
+
+            {{ partial "google_trend/trend_visual.html" }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section
-    class="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
+    class="section-md relative mt-[-10rem] overflow-hidden md:mt-[-14rem]">
     <div class="container relative z-30">
       <div class="row relative">
         <div class="md:col-10 mx-auto">
@@ -13,7 +31,9 @@
               method="POST"
               class="row gy-4 text-dark" data-netlify="true">
 
-              <h2 class="text-dark mb-3 text-xl font-bold sm:text-2xl">{{ i18n "about_you"}}</h2>
+              <h1 class="text-dark mb-3 text-xl font-bold sm:text-2xl">填写以下表格，获取每周预测更新</h1>
+
+              <h2 class="text-dark mb-3 text-xl font-bold sm:text-1xl">{{ i18n "about_you"}}</h2>
 
               <div class="sm:col-6">
                 <label for="fullname" class="form-label"
@@ -22,7 +42,7 @@
                 <input
                   type="text"
                   class="form-input"
-                  placeholder="Your Full Name"
+                  placeholder="姓名或者任何其他称呼"
                   id="fullname"
                   name="fullname"
                   required />
@@ -34,7 +54,7 @@
                 <input
                   type="text"
                   class="form-input"
-                  placeholder="Your Last Name"
+                  placeholder="公司"
                   id="company"
                   name="company"
                   required />
@@ -44,14 +64,14 @@
                 <input
                   type="email"
                   class="form-input"
-                  placeholder="Your Email Address"
+                  placeholder="邮件地址"
                   id="email"
                   required
                   name="email" />
               </div>
 
               <hr>
-              <h2 class="text-dark mb-3 text-xl font-bold sm:text-2xl">{{ i18n "trend_request"}}</h2>
+              <h2 class="text-dark mb-3 text-xl font-bold sm:text-1xl">{{ i18n "trend_request"}}</h2>
 
               <div class="sm:col-6">
                 <label for="trend_country" class="form-label">{{ i18n "trend_country" }}</label>

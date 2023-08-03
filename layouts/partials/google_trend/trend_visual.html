@@ -1,0 +1,114 @@
+{{ $trend_paths := getJSON "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/metadata.json" }}
+
+{{ $cat := "0" }}
+{{ $timeframe := "today 5-y" }}
+
+{{ $keywords := slice }}
+{{ $geo := slice }}
+{{ with $trend_paths }}
+  {{ range . }}
+      {{ $keywords = $keywords | append (index . "keyword") }}
+      {{ $geo = $geo | append (index . "geo") }}
+  {{ end }}
+{{ end }}
+
+{{ $keywords = $keywords | uniq }}
+{{ $geo = $geo | uniq }}
+
+<select id="selected_geo">
+  <option value="{{ index $geo 0 | lower }}" selected="selected">{{ i18n (index $geo 0) }}</option>
+  {{ with after 1 $geo }}
+    {{ range . }}
+    <option value="{{ . | lower }}" selected="selected">{{ i18n . }}</option>
+    {{ end }}
+  {{ end }}
+</select>
+<select id="selected_keyword">
+  <option value='{{ replace (index $keywords 0) " " "-" }}' selected="selected">{{ index $keywords 0 }}</option>
+  {{ with after 1 $keywords }}
+    {{ range . }}
+      <option value='{{ replace . " " "-" }}'>{{ . }}</option>
+    {{ end }}
+  {{ end }}
+</select>
+
+<div id="trend-chart" ></div>
+
+<script>
+function visualizeTrend(jsonUrl) {
+  d3.json(jsonUrl)
+.then(function (data) {
+  console.log(data)
+
+  x = data.map( function(item) { return item.date })
+  y = data.map( function(item) { return item.value })
+  query = data.map( function(item) {return item.query })[0]
+
+  var data = [
+    {
+      x: x,
+      y: y,
+      type: 'line',
+      marker: {
+        color: 'rgb(0,0,0,0.125)',
+        opacity: 0.7,
+      }
+    }
+  ];
+  var layout = {
+    title: "Weekly Trend for " + query,
+  };
+
+  Plotly.newPlot('trend-chart', data, layout, {displayModeBar: false});
+
+})
+.catch(function (error) {
+  console.log(error)
+});
+}
+
+let selectedKW = '{{ replace (index $keywords 0) " " "-" }}'
+let selectedGeo = '{{ index $geo 0 | lower }}'
+
+let selectingGeoList = document.getElementById('selected_geo');
+    selectingGeoList.onchange = (ev) =>{
+      let selecetedGeoIndex = selectingGeoList.selectedIndex;
+      console.log("Selected index is: " + selecetedGeoIndex);
+      let selectedGeoOption = selectingGeoList.options[selecetedGeoIndex];
+      console.log("Selected option is: " + selectedGeoOption.outerHTML);
+      console.log("Selected value is: " + selectedGeoOption.value);
+      console.log("Selected text is: " + selectedGeoOption.text);
+      selectedGeo = selectedGeoOption.value
+
+      visualizeTrendFor(selectedKW, selectedGeo)
+    }
+
+let selectingKWList = document.getElementById('selected_keyword');
+  selectingKWList.onchange = (ev) =>{
+      let selecetedKWIndex = selectingKWList.selectedIndex;
+      console.log("Selected index is: " + selecetedKWIndex);
+      let selectedKWOption = selectingKWList.options[selecetedKWIndex];
+      console.log("Selected option is: " + selectedKWOption.outerHTML);
+      console.log("Selected value is: " + selectedKWOption.value);
+      console.log("Selected text is: " + selectedKWOption.text);
+      selectedKW = selectedKWOption.value
+
+      visualizeTrendFor(selectedKW, selectedGeo)
+    }
+
+
+function visualizeTrendFor (keyword, geo) {
+  var jsonUrl = "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/keyword=" + keyword + "/cat=0/geo=" + geo + "/timeframe=today-5-y/format=json/snapshot_date=latest/data.json"
+
+  visualizeTrend(jsonUrl)
+}
+
+visualizeTrendFor(selectedKW, selectedGeo)
+</script>
+
+
+
+
+
+
+

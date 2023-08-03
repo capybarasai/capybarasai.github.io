@@ -14,4 +14,6 @@ contact_links:
         link: "mailto:hi@capybaras.ai"
       - label: "微信：emptymalei"
         # link: ""
+
+plotly: true
 ---

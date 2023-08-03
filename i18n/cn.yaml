@@ -84,3 +84,7 @@
 
 - id: trend_message
   translation: 其他补充
+
+# 国家
+- id: DE
+  translation: 德国
