@@ -88,3 +88,6 @@
 # 国家
 - id: DE
   translation: 德国
+
+- id: US
+  translation: 美国

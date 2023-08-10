@@ -62,7 +62,7 @@ target = '$1'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest"]
+home = ["HTML", "RSS", "WebAppManifest", "data", "trends"]
 
 ############################# Imaging ############################
 [imaging]
@@ -107,6 +107,16 @@ suffixes = ["webmanifest"]
 [outputFormats.WebAppManifest]
 mediaType = "application/manifest+json"
 rel = "manifest"
+[outputFormats.data]
+baseName = "data"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+[outputFormats.trends]
+baseName = "trends"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
 
 
 ############################# Plugins ##############################

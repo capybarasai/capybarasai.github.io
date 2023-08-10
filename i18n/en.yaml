@@ -69,3 +69,10 @@
 
 - id: back_to_home
   translation: Go Back Home
+
+# Countries
+- id: DE
+  translation: Germany
+
+- id: US
+  translation: USA

@@ -1,0 +1,9 @@
+{{ define "response" }}
+    {{ $trend_paths := getJSON "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/metadata.json" }}
+	{
+        {{ range $i, $hit := $trend_paths }}
+            {{ if $i }}, {{ end }}
+            "{{ delimit (slice $hit.keyword $hit.cat $hit.geo $hit.timeframe) "-" }}": "{{ $hit.path }}"
+	    {{ end }}
+    }
+{{ end }}

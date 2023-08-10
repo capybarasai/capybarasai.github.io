@@ -35,14 +35,14 @@
 <div id="trend-chart" ></div>
 
 <script>
-function visualizeTrend(jsonUrl) {
+function visualizeTrend(jsonUrl, query) {
   d3.json(jsonUrl)
 .then(function (data) {
   console.log(data)
 
   x = data.map( function(item) { return item.date })
   y = data.map( function(item) { return item.value })
-  query = data.map( function(item) {return item.query })[0]
+  {{/*  query = data.map( function(item) {return item.query })[0]  */}}
 
   var data = [
     {
@@ -80,7 +80,8 @@ let selectingGeoList = document.getElementById('selected_geo');
       console.log("Selected text is: " + selectedGeoOption.text);
       selectedGeo = selectedGeoOption.value
 
-      visualizeTrendFor(selectedKW, selectedGeo)
+      {{/*  visualizeTrendFor(selectedKW, selectedGeo)  */}}
+      visualizeTrendUsingUrl(selectedKW, selectedGeo)
     }
 
 let selectingKWList = document.getElementById('selected_keyword');
@@ -93,17 +94,44 @@ let selectingKWList = document.getElementById('selected_keyword');
       console.log("Selected text is: " + selectedKWOption.text);
       selectedKW = selectedKWOption.value
 
-      visualizeTrendFor(selectedKW, selectedGeo)
+      {{/*  visualizeTrendFor(selectedKW, selectedGeo)  */}}
+      visualizeTrendUsingUrl(selectedKW, selectedGeo)
     }
 
 
 function visualizeTrendFor (keyword, geo) {
   var jsonUrl = "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/keyword=" + keyword + "/cat=0/geo=" + geo + "/timeframe=today-5-y/format=json/snapshot_date=latest/data.json"
 
-  visualizeTrend(jsonUrl)
+  visualizeTrend(jsonUrl, keyword)
 }
 
-visualizeTrendFor(selectedKW, selectedGeo)
+{{/*  visualizeTrendFor(selectedKW, selectedGeo)  */}}
+
+d3.json("/trends.json")
+.then(function (data) {
+  console.log("trends.json")
+  console.log(data)
+  let trend_id = selectedKW + "-0-" + selectedGeo.toUpperCase() + "-today 5-y"
+  console.log(trend_id)
+  visualizeTrend(data[trend_id], selectedKW)
+})
+.catch(function (error) {
+  console.log(error)
+});
+
+function visualizeTrendUsingUrl (keyword, geo) {
+d3.json("/trends.json")
+.then(function (data) {
+  console.log("trends.json")
+  console.log(data)
+  let trend_id = keyword + "-0-" + geo.toUpperCase() + "-today 5-y"
+  console.log(trend_id)
+  visualizeTrend(data[trend_id], keyword)
+})
+.catch(function (error) {
+  console.log(error)
+});
+}
 </script>
 
 
