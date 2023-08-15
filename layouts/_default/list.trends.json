@@ -2,8 +2,9 @@
     {{ $trend_paths := getJSON "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/metadata.json" }}
 	{
         {{ range $i, $hit := $trend_paths }}
+            {{ $formated_kw := (replace $hit.keyword " " "-")}}
             {{ if $i }}, {{ end }}
-            "{{ delimit (slice $hit.keyword $hit.cat $hit.geo $hit.timeframe) "-" }}": "{{ $hit.path }}"
+            "{{ delimit (slice $formated_kw $hit.cat $hit.geo $hit.timeframe) "-" }}": "{{ $hit.path }}"
 	    {{ end }}
     }
 {{ end }}
