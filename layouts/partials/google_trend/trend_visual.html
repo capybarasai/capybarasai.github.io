@@ -35,32 +35,144 @@
 <div id="trend-chart" ></div>
 
 <script>
+
+function visualizeTrendForecast(dataURL, query) {
+  dataJSONUrl = dataURL + "/data.json"
+  forecastJSONUrl = dataURL + "/forecast.json"
+  Promise.all([
+    d3.json(dataJSONUrl),
+    d3.json(forecastJSONUrl)
+  ]).then(function([data, forecasts]) {
+    console.log("data")
+    console.log(data)
+    console.log("forecast")
+    console.log(forecasts)
+
+    x = data.map( function(item) { return item.date })
+    y = data.map( function(item) { return item.value })
+    x_forecast = forecasts.map( function(item) { return item.date })
+    y_forecast = forecasts.map( function(item) { return item.value })
+
+    var data = [
+      {
+        x: x,
+        y: y,
+        type: "scatter",
+        mode: "lines",
+        name: '{{ i18n "ts_vis_legend_trends" }}',
+        marker: {
+          color: 'rgb(0,0,0,0.125)',
+          opacity: 0.7,
+        }
+      },
+      {
+        x: x_forecast,
+        y: y_forecast,
+        type: "scatter",
+        mode: "lines",
+        name: '{{ i18n "ts_vis_legend_forecasts" }}',
+        marker: {
+          color: 'red',
+          opacity: 0.7,
+        },
+        line: {
+          dash: 'dashdot',
+          width: 2,
+          color: 'red'
+        }
+      }
+    ];
+
+    x_forecast_min = x_forecast[0]
+    x_forecast_max = x_forecast[x_forecast.length-1]
+    console.log("forecast min date", x_forecast_min, "from", x_forecast)
+    console.log("forecast max date", x_forecast_max, "from", x_forecast)
+
+    var layout = {
+      title: '{{ i18n "ts_vis_title_prefix" }}: ' + query,
+      xaxis: {
+        autorange: true,
+        rangeselector: {buttons: [
+            {
+              count: 6,
+              label: '{{ i18n "ts_vis_6m" }}',
+              step: 'month',
+              stepmode: 'backward'
+            },
+            {
+              count: 12,
+              label: '{{ i18n "ts_vis_12m" }}',
+              step: 'month',
+              stepmode: 'backward',
+            },
+            {
+              count: 24,
+              label: '{{ i18n "ts_vis_24m" }}',
+              step: 'month',
+              stepmode: 'backward',
+              active: true
+            },
+            {
+              step: 'all',
+              label: '{{ i18n "ts_vis_all" }}'
+            }
+          ]},
+        rangeslider: {},
+        type: 'date'
+      },
+      legend: {
+        x: 1,
+        xanchor: 'right',
+        y: 1.2,
+        orientation: 'h'
+      },
+      shapes: [
+        {
+            type: 'rect',
+            xref: 'x',
+            yref: 'paper',
+            x0: x_forecast_min,
+            y0: 0,
+            x1: x_forecast_max,
+            y1: 1,
+            fillcolor: '#f1807e',
+            opacity: 0.2,
+            line: {
+                width: 0
+            }
+        },
+      ]
+    };
+
+    Plotly.newPlot('trend-chart', data, layout, {displayModeBar: false});
+  })
+}
+
 function visualizeTrend(jsonUrl, query) {
   d3.json(jsonUrl)
-.then(function (data) {
-  console.log(data)
+  .then(function (data) {
+    console.log(data)
 
-  x = data.map( function(item) { return item.date })
-  y = data.map( function(item) { return item.value })
-  {{/*  query = data.map( function(item) {return item.query })[0]  */}}
+    x = data.map( function(item) { return item.date })
+    y = data.map( function(item) { return item.value })
+    {{/*  query = data.map( function(item) {return item.query })[0]  */}}
 
-  var data = [
-    {
-      x: x,
-      y: y,
-      type: 'line',
-      marker: {
-        color: 'rgb(0,0,0,0.125)',
-        opacity: 0.7,
+    var data = [
+      {
+        x: x,
+        y: y,
+        type: 'line',
+        marker: {
+          color: 'rgb(0,0,0,0.125)',
+          opacity: 0.7,
+        }
       }
-    }
-  ];
-  var layout = {
-    title: "Weekly Trend for " + query,
-  };
+    ];
+    var layout = {
+      title: "Weekly Trend for " + query,
+    };
 
-  Plotly.newPlot('trend-chart', data, layout, {displayModeBar: false});
-
+    Plotly.newPlot('trend-chart', data, layout, {displayModeBar: false});
 })
 .catch(function (error) {
   console.log(error)
@@ -80,7 +192,6 @@ let selectingGeoList = document.getElementById('selected_geo');
       console.log("Selected text is: " + selectedGeoOption.text);
       selectedGeo = selectedGeoOption.value
 
-      {{/*  visualizeTrendFor(selectedKW, selectedGeo)  */}}
       visualizeTrendUsingUrl(selectedKW, selectedGeo)
     }
 
@@ -100,12 +211,11 @@ let selectingKWList = document.getElementById('selected_keyword');
 
 
 function visualizeTrendFor (keyword, geo) {
-  var jsonUrl = "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/keyword=" + keyword + "/cat=0/geo=" + geo + "/timeframe=today-5-y/format=json/snapshot_date=latest/data.json"
+  var dataJSONUrl = "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/keyword=" + keyword + "/cat=0/geo=" + geo + "/timeframe=today-5-y/format=json/snapshot_date=latest/data.json"
+  var forecastJSONUrl = "https://sm-google-trend-public.s3.eu-central-1.amazonaws.com/agg/keyword=" + keyword + "/cat=0/geo=" + geo + "/timeframe=today-5-y/format=json/snapshot_date=latest/forecast.json"
 
-  visualizeTrend(jsonUrl, keyword)
+  visualizeTrendForecast(dataJSONUrl, forecastJSONUrl, keyword)
 }
-
-{{/*  visualizeTrendFor(selectedKW, selectedGeo)  */}}
 
 d3.json("/trends.json")
 .then(function (data) {
@@ -113,7 +223,9 @@ d3.json("/trends.json")
   console.log(data)
   let trend_id = selectedKW + "-0-" + selectedGeo.toUpperCase() + "-today 5-y"
   console.log(trend_id)
-  visualizeTrend(data[trend_id], selectedKW)
+  console.log(data[trend_id])
+  var dataURL = data[trend_id].substring(0, data[trend_id].lastIndexOf("/"));
+  visualizeTrendForecast(dataURL, selectedKW)
 })
 .catch(function (error) {
   console.log(error)
@@ -126,17 +238,11 @@ d3.json("/trends.json")
   console.log(data)
   let trend_id = keyword + "-0-" + geo.toUpperCase() + "-today 5-y"
   console.log(trend_id)
-  visualizeTrend(data[trend_id], keyword)
+  var dataURL = data[trend_id].substring(0, data[trend_id].lastIndexOf("/"));
+  visualizeTrendForecast(dataURL, keyword)
 })
 .catch(function (error) {
   console.log(error)
 });
 }
 </script>
-
-
-
-
-
-
-
