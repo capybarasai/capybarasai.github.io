@@ -91,3 +91,26 @@
 
 - id: US
   translation: 美国
+
+# Visualization
+
+- id: ts_vis_all
+  translation: "全部"
+
+- id: ts_vis_6m
+  translation: "6 个月"
+
+- id: ts_vis_12m
+  translation: "12 个月"
+
+- id: ts_vis_24m
+  translation: "24 个月"
+
+- id: ts_vis_legend_trends
+  translation: "当前趋势"
+
+- id: ts_vis_legend_forecasts
+  translation: "趋势预测"
+
+- id: ts_vis_title_prefix
+  translation: "每周趋势"
