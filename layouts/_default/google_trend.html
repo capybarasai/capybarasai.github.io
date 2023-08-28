@@ -1,13 +1,13 @@
 {{ define "main" }}
   {{ partial "page-header.html" . }}
 
-  <section class="section relative z-20 mt-[-26rem] overflow-hidden">
-    <div class="container relative z-30">
-      <div class="row relative">
-        <div class="md:col-10 mx-auto">
+  <section class="section relative z-20 mt-[-26rem] overflow-hidden w-full">
+    <div class="container relative z-30 w-full">
+      <div class="row relative w-full">
+        <div class="md:col-12 w-full">
           <div
             data-aos="fade-up-sm"
-            class="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14">
+            class="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-1 sm:py-1 w-full sm:w-full">
 
             {{ partial "google_trend/trend_visual.html" }}
 
