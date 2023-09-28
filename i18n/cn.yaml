@@ -92,6 +92,9 @@
 - id: US
   translation: 美国
 
+- id: GB
+  translation: 英国
+
 # Visualization
 
 - id: ts_vis_all
