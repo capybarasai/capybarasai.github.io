@@ -1,0 +1,127 @@
+{{ $api_base_paths := "https://z44fsvcvcvn66vx4pzavwkqaam0odisk.lambda-url.ap-southeast-1.on.aws" }}
+
+
+<div class="px-8 sm:px-10">
+<form
+    name="elasticity_parameters"
+    class="row gy-4 text-dark" data-netlify="true">
+
+    <h1 class="text-dark mb-3 text-xl font-bold sm:text-2xl">估算产品在不同价位的销量和需求</h1>
+
+    <h2 class="text-dark mb-3 text-xl font-bold sm:text-1xl">填写以下参数，点击计算，既可以获得产品在不同价位的销量和需求。我们协议弹性一般为负数。</h2>
+
+
+    <div class="sm:col-3 col-3">
+      <label for="price" class="form-label"
+        >当前价格</label
+      >
+      <input
+        type="text"
+        class="form-input"
+        placeholder="100"
+        id="price"
+        name="price"
+        value="10"
+        required />
+    </div>
+    <div class="sm:col-3 col-3">
+      <label for="demand" class="form-label"
+        >当前销量/需求</label
+      >
+      <input
+        type="text"
+        class="form-input"
+        placeholder="100"
+        id="demand"
+        name="demand"
+        value="100"
+        required />
+    </div>
+
+    <div class="sm:col-3 col-3">
+      <label for="elasticity" class="form-label"
+        >弹性</label
+      >
+      <input
+        type="text"
+        class="form-input"
+        placeholder="-3"
+        id="elasticity"
+        name="elasticity"
+        value="-3"
+        required />
+    </div>
+
+    <div class="sm:col-3 col-3 text-center">
+      <button type="button" class="btn btn-primary" onclick="updatePlot()">计算</button>
+    </div>
+
+  </form>
+</div>
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="chart"></div>
+
+
+<script>
+
+  function generateArrayAroundValue(value, range_fraction, length) {
+    const range = value * range_fraction;
+    const arr = [];
+    const step = range * 2 / (length - 1);
+    for (let i = value - range; i <= value + range; i += step) {
+      arr.push(parseFloat(i.toFixed(2)));
+      if (arr.length === length) {
+        break;
+      }
+    }
+    return arr;
+  }
+
+  function modelParameters() {
+    const elasticity = document.getElementById("elasticity").value;
+    const demand = document.getElementById("demand").value;
+    const price = document.getElementById("price").value;
+    console.log(`Elasticity: ${elasticity}, Demand: ${demand}, Price: ${price}`);
+    return {elasticity, demand, price};
+  }
+
+  function updatePlot() {
+    const params = modelParameters();
+    const elasticity = params.elasticity;
+    const all_prices = generateArrayAroundValue(params.price, 0.2, 100);
+    const all_demands = all_prices.map(price => {
+      return parseFloat((params.demand * Math.pow(price / params.price, elasticity)).toFixed(2));
+    });
+    const trace1 = {
+      x: all_prices,
+      y: all_demands,
+      type: 'scatter',
+      mode: 'lines',
+      name: '销量/需求'
+    };
+    const data = [trace1];
+    const layout = {
+      title: '价格弹性曲线',
+      xaxis: {
+        title: '价格'
+      },
+      yaxis: {
+        title: '销量/需求'
+      }
+    };
+    const config = {
+      displayModeBar: false,
+      responsive: true
+    };
+    Plotly.newPlot('chart', data, layout, config);
+  }
+
+  {{/*  const button = document.querySelector('button');
+  button.addEventListener('click', updatePlot);  */}}
+
+  updatePlot()
+
+</script>

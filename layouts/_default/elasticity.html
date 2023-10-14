@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+  <section class="section relative z-20 mt-[-26rem] overflow-hidden">
+    <div class="container relative z-30">
+      <div class="row relative">
+        <div class="md:col-12 mx-auto">
+          <div
+            data-aos="fade-up-sm"
+            class="shadow-default rounded-2xl bg-white px-1 py-10 sm:px-1 sm:py-14">
+
+            {{ partial "elasticity/elasticity_visual.html" }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Articles Section -->
+{{ end }}

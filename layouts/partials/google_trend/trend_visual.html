@@ -15,6 +15,7 @@
 {{ $keywords = $keywords | uniq }}
 {{ $geo = $geo | uniq }}
 
+<div class="px-8 sm:px-10">
 <select id="selected_geo">
   <option value="{{ index $geo 0 | lower }}" selected="selected">{{ i18n (index $geo 0) }}</option>
   {{ with after 1 $geo }}
@@ -31,6 +32,7 @@
     {{ end }}
   {{ end }}
 </select>
+</div>
 
 <div id="trend-chart" ></div>
 
@@ -123,7 +125,7 @@ function visualizeTrendForecast(dataURL, query) {
       legend: {
         x: 1,
         xanchor: 'right',
-        y: 1.2,
+        y: 1.25,
         orientation: 'h'
       },
       shapes: [
