@@ -20,6 +20,7 @@ banner:
   facility:
     - "当前趋势"
     - "需求预测"
+    - "行业分析"
     - "定制咨询"
 
 brands:
@@ -48,6 +49,9 @@ feature_list:
     - title: "需求预测"
       icon: "fa-regular fa-lightbulb"
       description: "预测未来商品需求，合理规划库存。"
+    - title: "行业分析"
+      icon: "fa-solid fa-file-contract"
+      description: "基于全网数据的行业报告。"
     # - title: "Prise en charge des plugins"
     #   icon: "fa-regular fa-lightbulb"
     #   description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
