@@ -17,7 +17,7 @@ pricing_plan:
       price: "0"
       price_type: "月"
       description:
-        - "获取定制的谷歌趋势数据和预测"
+        - "获取定制的谷歌趋势预测"
         - "轻量级咨询定制服务"
         - "趋势和需求短期预测"
       button:

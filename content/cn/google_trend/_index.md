@@ -1,8 +1,8 @@
 ---
-title: "谷歌趋势"
+title: "谷歌趋势预测"
 layout: "google_trend"
 draft: false
-description: "免费趋势数据"
+description: "免费趋势预测"
 show_page_description: true
 
 featured_image: "images/career_capybara_walking.jpg"
