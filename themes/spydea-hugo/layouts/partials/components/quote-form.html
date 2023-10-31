@@ -4,14 +4,16 @@
 {{ with site.Params.quote_form }}
   {{ if .enable }}
     <form
+      name="email_collection_form"
       method="POST"
-      action="{{ .action }}"
+      {{/*  action="{{ .action }}"  */}}
       class="{{ if $class }}
         {{ $class }}
-      {{ end }} flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] sm:flex-row">
+      {{ end }} flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] sm:flex-row" data-netlify="true">
       <input
         type="email"
         class="w-full border-0 bg-transparent p-4 pl-6 text-center text-base placeholder:text-neutral-400 focus:border-0 focus:ring-0 sm:text-left"
+        id="email_address"
         placeholder="{{ i18n `email_input_placeholder` }}"
         required />
       <button type="submit" class="btn btn-primary btn-md">

@@ -156,3 +156,8 @@ link = "plugins/cookie.js"
 link = "plugins/lazy-loader.js"
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
+
+
+[[params.quote_format]]
+enable = true
+action = "POST"

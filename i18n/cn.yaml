@@ -117,3 +117,6 @@
 
 - id: ts_vis_title_prefix
   translation: "每周趋势"
+
+- id: "Get Started"
+  translation: "立刻行动"

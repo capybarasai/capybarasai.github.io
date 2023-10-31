@@ -77,7 +77,7 @@
           {{ if .HasChildren }}
             <li class="nav-item nav-dropdown group">
               <span
-                class="nav-link 
+                class="nav-link
                 {{ range .Children }}
                   {{ $childURL := .URL | absLangURL }}
                   {{ $active := eq $childURL $pageURL }}
@@ -154,7 +154,7 @@
               <a
                 href="{{ .link | relLangURL }}"
                 class="btn btn-primary w-[200px] min-[340px]:w-[300px] lg:w-auto">
-                {{ .label | markdownify }}
+                {{ i18n .label | markdownify }}
               </a>
             {{ end }}
           {{ end }}

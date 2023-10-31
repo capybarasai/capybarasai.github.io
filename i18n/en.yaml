@@ -76,3 +76,6 @@
 
 - id: US
   translation: USA
+
+- id: "Get Started"
+  translation: "Get Started"
